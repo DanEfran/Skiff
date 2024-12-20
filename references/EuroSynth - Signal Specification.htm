@@ -1,0 +1,199 @@
+<html><head>
+
+<title>EuroSynth - Signal Specification</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+</head>
+
+<body dir="ltr" vlink="#800080" text="#000000" link="#0000ff" lang="en-AU" bgcolor="#CCCCCC">
+
+<table width="1200" border="2" bgcolor="#FFFFFF" align="center">
+
+  <tbody><tr> 
+
+    <td width="80%"> 
+
+      <div align="CENTER"> 
+
+        <table width="100%" border="1">
+
+          <tbody><tr> 
+
+            <td width="12%"><div align="center">
+              <p><font size="6" face="Verdana, Arial, Helvetica, sans-serif" color="#0000FF"><b><a name="Top"></a>EuroSynth Specification </b></font></p>
+              <p><font size="6" face="Verdana, Arial, Helvetica, sans-serif" color="#0000FF"><b>Signal Specifications</b></font></p>
+            </div></td>
+          </tr>
+        </tbody></table>
+
+      </div>
+
+    </td>
+  </tr>
+  <tr>
+    <td><table width="100%" border="1">
+      <tbody><tr>
+        <td width="16%" height="573"><p class="western" style="margin-bottom: 0cm" lang="en-US" align="justify">
+          
+          <font size="5" face="Arial, Helvetica, sans-serif">Signals can be generally broken in to 3 main categories:-</font></p>
+          <p lang="en-US" align="justify"> <font size="5" face="Arial, Helvetica, sans-serif"><br>
+          </font></p>
+          <div align="justify">
+            <ol>
+              <li><font size="5" face="Arial, Helvetica, sans-serif"><strong>CV Signals: </strong>These signals, typically, only operate in the positive region or negative region (but not both)</font></li>
+              <li><font size="5" face="Arial, Helvetica, sans-serif"><strong>Logic Signals: </strong>These signals only have 2 stable states: [OFF]  	and [ON]</font></li>
+              <li><font size="5" face="Arial, Helvetica, sans-serif"><strong>AC/Audio Signals: </strong>These signals swing either side of the 0V  	rail</font> </li>
+            </ol>
+          </div>
+          <p lang="en-US" align="justify"><font size="5" face="Arial, Helvetica, sans-serif">The  correct way to specify signals is:-</font></p>
+          <ol>
+            <li><font align="justify" size="5" lang="en-US" face="Arial, Helvetica, sans-serif">Audio  	is specified in decibels (dB's).</font></li>
+            <li><font size="5" face="Arial, Helvetica, sans-serif">Voltage  	Control (VC) is specified in V/Oct or dB/volts.</font></li>
+            <li><font size="5" face="Arial, Helvetica, sans-serif">Triggers  	are specified in slew rate/time and threshold voltage.</font></li>
+            <li><font size="5" face="Arial, Helvetica, sans-serif">Gates  	are in threshold and voltage levels.</font> </li>
+          </ol>
+          <p lang="en-US" align="justify"><font size="5" face="Arial, Helvetica, sans-serif">The specification will further split each signal category in to an  INPUT and an OUTPUT specification.</font></p>
+          <p lang="en-US" align="justify"><font size="5" face="Arial, Helvetica, sans-serif"><strong>Colour Coding</strong></font></p>
+          <p lang="en-US" align="justify"><font size="5" face="Arial, Helvetica, sans-serif">EuroSynth
+ proposes defining an input/output colour coding scheme to  assist with 
+easier/faster identification of an input/output jacks  function. This 
+will be, of course, a purely optional specification  but products using 
+the colour scheme will promote a more  user-friendly interface.</font></p>
+          <p lang="en-US" align="justify"><font size="5" face="Arial, Helvetica, sans-serif">The
+ scheme is divided in to the 3 signal categories AC/Audio, CV,  Logic 
+(GATE and TRIGGER). Each category is further sub-divided in to  IN 
+(3-colour), OUT (6-colour) and SPECIAL (9-colour)</font></p>
+          <p lang="en-US" align="justify"> <font size="5" face="Arial, Helvetica, sans-serif"><br>
+          </font></p>
+          <div align="justify">
+            <table width="657" cellspacing="0" cellpadding="2" align="center">
+                <colgroup><col width="159">
+                <col width="160">
+                <col width="160">
+                <col width="159">
+                </colgroup><tbody><tr valign="top">
+                  <td width="159"><p lang="en-US" align="center"> <font size="5" face="Arial, Helvetica, sans-serif"><br>
+                  </font></p></td>
+                  <td width="160"><p lang="en-US" align="center"> <font size="5" face="Arial, Helvetica, sans-serif"><strong>INPUT</strong></font></p></td>
+                  <td width="160"><p lang="en-US" align="center"> <font size="5" face="Arial, Helvetica, sans-serif"><strong>OUTPUT</strong></font></p></td>
+                  <td width="159"><p lang="en-US" align="center"> <font size="5" face="Arial, Helvetica, sans-serif"><strong>SPECIAL</strong></font></p></td>
+                </tr>
+                <tr>
+                  <td width="159"><p lang="en-US" align="center"> <font size="5" face="Arial, Helvetica, sans-serif"><strong><a href="https://www.elby-designs.com/webtek/documents/eurosynth/signal_audio.htm">AC/Audio</a></strong></font></p></td>
+                  <td width="160" valign="top"><p lang="en-US" align="center"> <font size="5" face="Arial, Helvetica, sans-serif"><a href="https://www.elby-designs.com/webtek/documents/eurosynth/signal_audio.htm"><img src="EuroSynth%20-%20Signal%20Specification_files/jack-black.jpg" name="Picture 15" width="192" height="141" border="0" align="bottom"></a> </font></p></td>
+                  <td width="160" valign="top"><p lang="en-US" align="center"> <font size="5" face="Arial, Helvetica, sans-serif"><a href="https://www.elby-designs.com/webtek/documents/eurosynth/signal_audio.htm"><img src="EuroSynth%20-%20Signal%20Specification_files/jack-white.jpg" name="Picture 16" width="192" height="141" border="0" align="bottom"></a> </font></p></td>
+                  <td width="159" valign="top"><p lang="en-US" align="center"><font size="5" face="Arial, Helvetica, sans-serif"><a href="https://www.elby-designs.com/webtek/documents/eurosynth/signal_audio.htm"><img src="EuroSynth%20-%20Signal%20Specification_files/jack-grey.jpg" name="Picture 17" width="192" height="141" border="0" align="bottom"></a></font></p></td>
+                </tr>
+                <tr>
+                  <td width="159"><p lang="en-US" align="center"> <font size="5" face="Arial, Helvetica, sans-serif"><strong><a href="https://www.elby-designs.com/webtek/documents/eurosynth/signal_cv.htm">CV</a></strong></font></p></td>
+                  <td width="160" valign="top"><p lang="en-US" align="center"> <font size="5" face="Arial, Helvetica, sans-serif"><a href="https://www.elby-designs.com/webtek/documents/eurosynth/signal_cv.htm"><img src="EuroSynth%20-%20Signal%20Specification_files/jack-blue.jpg" name="Picture 18" width="192" height="141" border="0" align="bottom"></a> </font></p></td>
+                  <td width="160" valign="top"><p lang="en-US" align="center"> <font size="5" face="Arial, Helvetica, sans-serif"><a href="https://www.elby-designs.com/webtek/documents/eurosynth/signal_cv.htm"><img src="EuroSynth%20-%20Signal%20Specification_files/jack-green.jpg" name="Picture 19" width="192" height="141" border="0" align="bottom"></a> </font></p></td>
+                  <td width="159" valign="top"><p lang="en-US" align="center"> <font size="5" face="Arial, Helvetica, sans-serif"><a href="https://www.elby-designs.com/webtek/documents/eurosynth/signal_cv.htm"><img src="EuroSynth%20-%20Signal%20Specification_files/jack-purple.jpg" name="Picture 20" width="192" height="141" border="0" align="bottom"></a> </font></p></td>
+                </tr>
+                <tr>
+                  <td width="159"><p lang="en-US" align="center"> <font size="5" face="Arial, Helvetica, sans-serif"><strong><a href="https://www.elby-designs.com/webtek/documents/eurosynth/signal_logic.htm">Logic</a></strong></font></p></td>
+                  <td width="160" valign="top"><p lang="en-US" align="center"> <font size="5" face="Arial, Helvetica, sans-serif"><a href="https://www.elby-designs.com/webtek/documents/eurosynth/signal_logic.htm"><img src="EuroSynth%20-%20Signal%20Specification_files/jack-red.jpg" name="Image2" width="192" height="141" border="0" align="bottom"></a> </font></p></td>
+                  <td width="160" valign="top"><p lang="en-US" align="center"> <font size="5" face="Arial, Helvetica, sans-serif"><a href="https://www.elby-designs.com/webtek/documents/eurosynth/signal_logic.htm"><img src="EuroSynth%20-%20Signal%20Specification_files/jack-yellow.jpg" name="Picture 22" width="192" height="141" border="0" align="bottom"></a> </font></p></td>
+                  <td width="159" valign="top"><p lang="en-US" align="center"> <font size="5" face="Arial, Helvetica, sans-serif"><a href="https://www.elby-designs.com/webtek/documents/eurosynth/signal_logic.htm"><img src="EuroSynth%20-%20Signal%20Specification_files/jack-orange.jpg" name="Picture 23" width="192" height="141" border="0" align="bottom"></a> </font></p></td>
+                </tr>
+              </tbody></table>
+          </div>
+          <p lang="en-US" align="justify"><font size="5" face="Arial, Helvetica, sans-serif">Users
+ of 4U SERGE Systems will recognise that the INPUT colour coding remains
+ the same as specified by SERGE. It is STRONGLY recommended that the 
+6-colour system be adopted as a minium to allow for easy differentiation
+ of input and output signals within each category. The 3rd column for 
+the 9-colour system is somewhat optional as these are rarely used. </font></p>
+          <p lang="en-US" align="justify"><font size="5" face="Arial, Helvetica, sans-serif"><strong>Patch Points</strong></font></p>
+          <p lang="en-US" align="justify"><font size="5" face="Arial, Helvetica, sans-serif">The
+ EuroSynth specification advocates the use of 4mm banana jacks as  the 
+preferred patching connection. These offer a larger contact  surface 
+between the plug and socket and provide a more robust  connection.</font></p>
+          <p lang="en-US" align="center"><img src="EuroSynth%20-%20Signal%20Specification_files/moveline.gif" width="465" height="3"></p>
+          <p class="western" style="margin-bottom: 0cm" lang="en-US" align="justify"><font size="5"><b><font face="Arial, Helvetica, sans-serif">NB: CV Signal Rational</font></b></font></p>
+          <p class="western" style="margin-bottom: 0cm" lang="en-US" align="justify"><font size="5" face="Arial, Helvetica, sans-serif">The following notes should be read to help explain some of the logic
+            behind the levels specified here.</font></p>
+          <p class="western" style="margin-bottom: 0cm" lang="en-US" align="justify"><font size="5" face="Arial, Helvetica, sans-serif">VCAs can be scaled to at least 12dB per Volt. This helps provide the
+            best sounding envelopes, 5Volt peak providing&nbsp;a meaty 60dB
+            envelope sound, including total shutout at 0Volt VC.</font></p>
+          <p class="western" style="margin-bottom: 0cm" lang="en-US" align="justify"><font size="5" face="Arial, Helvetica, sans-serif">A single-turn pot can do a good job of tuning over 5 octaves. Tuning
+            accurately over 8 octaves or more can start to be a problem with a
+            single-turn pot.</font></p>
+          <p class="western" style="margin-bottom: 0cm" lang="en-US" align="justify"> <font size="5" face="Arial, Helvetica, sans-serif"><b>INPUT/OUTPUT Impedances</b></font></p>
+          <p class="western" style="margin-bottom: 0cm" lang="en-US" align="justify"><font size="5" face="Arial, Helvetica, sans-serif">To maintain maximum compatibility between modules and to minimise
+            signal drops, it is important to define recommended input and output
+            impedances.</font></p>
+          <p class="western" style="margin-bottom: 0cm" lang="en-US" align="justify"><font size="5" face="Arial, Helvetica, sans-serif">In general, EuroRack uses 1K for output impedance and 100K for input
+            impedance. Although 1K is workable for many signal levels, it is
+            desirable to have a lower figure for sensitive CV inputs like the
+            1V/Octave input/output.</font></p>
+          <p class="western" style="margin-bottom: 0cm" lang="en-US" align="justify"><font size="5" face="Arial, Helvetica, sans-serif">EuroSynth recommends for sensitive CV outputs (1V/Octave for example)
+            that the impedance be around 50R while other outputs can be
+            around 330R.</font></p>
+          <p class="western" style="margin-bottom: 0cm" lang="en-US" align="justify"><font size="5" face="Arial, Helvetica, sans-serif">Input impedances should, typically, be in the region of 100K with a
+            lower limit of 47K.</font></p>
+          <p class="western" style="margin-bottom: 0cm" lang="en-US" align="justify"><font size="5" face="Arial, Helvetica, sans-serif"><b>NOTES:</b></font></p>
+          <p class="western" style="margin-bottom: 0cm" lang="en-US" align="justify"><font size="5" face="Arial, Helvetica, sans-serif">All of the above levels have been selected as they allow for the use
+            of unshielded patchcords and help avoid high-frequency pollution with
+            low-impedances outputs which are less capable of being absorbed than at
+            medium and lower frequencies.</font></p>
+          <p class="western" style="margin-bottom: 0cm" lang="en-US" align="justify"><font size="5" face="Arial, Helvetica, sans-serif">When defining these signal levels for the EuroSynth a number of
+            considerations where looked at including:-</font></p>
+          <ol><li><p style="margin-bottom: 0cm" lang="en-US"><font size="5" face="Arial, Helvetica, sans-serif">allowance for voltage
+                headroom for opamp outputs</font></p>
+            </li><li><font size="5" face="Arial, Helvetica, sans-serif">suitability of
+                signals with unscreened patchcords
+            
+            </font>
+            </li><li><font size="5" face="Arial, Helvetica, sans-serif">existing range of
+                products already on the market
+            
+            </font>
+            </li><li><font size="5" face="Arial, Helvetica, sans-serif">the growing abundance
+                of 5V powered designs and their ability to be interfaced with the
+                more regular analogue designs with minimal additional circuitry
+              </font>            
+          </li></ol>          
+          </td>
+      </tr>
+      
+    </tbody></table></td>
+  </tr>
+  <tr>
+    <td><div align="center">
+      <div align="center">
+        <center>
+        </center>
+        <table width="100%" border="1">
+          <tbody><tr>
+            <td width="38%"><p align="center"><a href="https://www.elby-designs.com/webtek/documents/eurosynth/power_distribution.htm"><img src="EuroSynth%20-%20Signal%20Specification_files/pointer-left.jpg" width="143" height="143" border="0"></a></p>
+              <p align="center"><font size="5" face="Arial, Helvetica, sans-serif"><a href="https://www.elby-designs.com/webtek/documents/eurosynth/power_distribution.htm">Power Distribution</a></font></p></td>
+            <td width="38%"><div align="center">
+              <p><a href="#Top"><img src="EuroSynth%20-%20Signal%20Specification_files/pointer-up.jpg" width="142" height="142" border="0"></a></p>
+              <p><a href="#Top"><font size="5" face="Arial, Helvetica, sans-serif">Top Of Page </font></a></p>
+            </div></td>
+            <td width="38%"><div align="center">
+              <p><a href="https://www.elby-designs.com/webtek/documents/eurosynth/midi_interfacing.htm"><img src="EuroSynth%20-%20Signal%20Specification_files/pointer-right.jpg" width="143" height="143" border="0"></a></p>
+              <p><a href="https://www.elby-designs.com/webtek/documents/eurosynth/midi_interfacing.htm"><font size="5" face="Arial, Helvetica, sans-serif">MIDI Interfacing</font></a></p>
+            </div></td>
+          </tr>
+        </tbody></table>
+      </div>
+      <font size="3" face="Arial"><font size="4" face="Arial, Helvetica, sans-serif" color="#000000">Email:&nbsp; <a href="mailto:elby-designs@bigpond.com"> elby-designs@bigpond.com</a><br>
+        </font></font><font size="4" face="Arial, Helvetica, sans-serif">© Copyright 2000. All rights reserved. &nbsp;&nbsp;<i>&nbsp; </i>Rev</font><font size="4" face="Arial, Helvetica, sans-serif">ised:
+          <!--webbot bot="TimeStamp" startspan
+
+        s-type="EDITED" s-format="%B %d, %Y" -->
+          <!-- #BeginDate format:Am1 -->September 20, 2022<!-- #EndDate -->
+        </font></div>
+    </td>
+  </tr>
+</tbody></table>
+
+<p align="center">&nbsp;</p>
+
+
+
+
+
+</body></html>

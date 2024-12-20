@@ -1,0 +1,121 @@
+<html><head>
+
+<title>EuroSynth - MIDI Interfacing</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+</head>
+
+<body dir="ltr" vlink="#800080" text="#000000" link="#0000ff" lang="en-AU" bgcolor="#CCCCCC">
+
+<table width="1200" border="2" bgcolor="#FFFFFF" align="center">
+
+  <tbody><tr> 
+
+    <td width="80%"> 
+
+      <div align="CENTER"> 
+
+        <table width="100%" border="1">
+
+          <tbody><tr> 
+
+            <td width="12%"><div align="center">
+              <p><font size="6" face="Verdana, Arial, Helvetica, sans-serif" color="#0000FF"><b><a name="Top"></a>EuroSynth Specification </b></font></p>
+              <p><font size="6" face="Verdana, Arial, Helvetica, sans-serif" color="#0000FF"><b>MIDI Interfacing</b></font></p>
+            </div></td>
+          </tr>
+        </tbody></table>
+
+      </div>
+
+    </td>
+  </tr>
+  <tr>
+    <td><table width="100%" border="1">
+      <tbody><tr>
+        <td width="16%" height="573"><p class="western" style="margin-bottom: 0cm" lang="en-US" align="justify"><font size="5" face="Arial, Helvetica, sans-serif">The proposed CV specification when applied strictly to a 'MIDI
+            controlled 1V/Octave input' would give us control over the lowest 5
+            octaves starting at C0 (8.662Hz) and finishing at Middle C
+            (261.626Hz). </font></p>
+          <p class="western" style="margin-bottom: 0cm" lang="en-US" align="justify"><font size="5" face="Arial, Helvetica, sans-serif">It
+ is proposed that devices using a 1V/Octave input
+            should generate Middle C with a 2.5V input and so defining a
+ 0V-5V range eqivalent to ~35Hz to ~1kHz. As part of this requirement
+            it will be necessary to define the appropriate control 
+settings
+            (COARSE and FINE for example) so that the control can be 
+replicated
+            across similar modules from different manufacturers. As an 
+example:
+            on a VCO, setting both COARSE and FINE to their 
+mid-positions and
+            with all other frequency adjusting settings set to '0', the 
+VCO
+            should generate Middle C.</font></p>
+          <p class="western" style="margin-bottom: 0cm" lang="en-US" align="justify"><font size="5" face="Arial, Helvetica, sans-serif">The 1V/Octave needs to work this way to remain compliant with the CV
+            specification which stipulates a 0V to 5V operating range.</font></p>
+          <p class="western" style="margin-bottom: 0cm" lang="en-US" align="justify"><font size="5" face="Arial, Helvetica, sans-serif">MIDI GATE output is a LOGIC signal and so should generate a 0V/5V
+            output.</font></p>
+          <p class="western" style="margin-bottom: 0cm" lang="en-US" align="justify"><font size="5" face="Arial, Helvetica, sans-serif">MIDI Note output is a CV output and is theoretically capable of going up to 10.58V but
+            that is not readily achievable in a 12V system without more
+            specialised components and so should be limited to a nominal 5-Octave
+            (5V) range with the option of extending to 9-Octave (9V) when used with modules
+            suitably adjusted for the higher input.</font></p>
+          <p class="western" style="margin-bottom: 0cm" lang="en-US" align="justify"><font size="5" face="Arial, Helvetica, sans-serif">MIDI CV should also be limited to a nominal 0V-5V range with the option of
+            moving in to the Audio signal range of +/-2.5V</font></p>
+          <p class="western" style="margin-bottom: 0cm" lang="en-US" align="justify"> <br>
+          </p>
+          <p class="western" style="margin-bottom: 0cm" lang="en-US" align="justify"> <br>
+          </p>
+          <p class="western" style="margin-bottom: 0cm" lang="en-US" align="justify"> <br>
+          </p>
+          <p class="western" style="margin-bottom: 0cm" lang="en-US" align="justify"> <br>
+          </p>
+          <p class="western" style="margin-bottom: 0cm" lang="en-US" align="justify"> <br>
+          </p>
+          <p class="western" style="margin-bottom: 0cm" lang="en-US" align="justify"> <br>
+          </p>
+          <p class="western" style="margin-bottom: 0cm" lang="en-US" align="justify"> <br>
+          </p></td>
+      </tr>
+      
+    </tbody></table></td>
+  </tr>
+  <tr>
+    <td><div align="center">
+      <div align="center">
+        <center>
+        </center>
+        <table width="100%" border="1">
+          <tbody><tr>
+            <td width="38%"><p align="center"><a href="https://www.elby-designs.com/webtek/documents/eurosynth/signal_specification.htm"><img src="EuroSynth%20-%20MIDI%20Interfacing_files/pointer-left.jpg" width="143" height="143" border="0"></a></p>
+              <p align="center"><font size="5" face="Arial, Helvetica, sans-serif"><a href="https://www.elby-designs.com/webtek/documents/eurosynth/signal_specification.htm">Signal Specification</a></font></p></td>
+            <td width="38%"><div align="center">
+              <p><a href="#Top"><img src="EuroSynth%20-%20MIDI%20Interfacing_files/pointer-up.jpg" width="142" height="142" border="0"></a></p>
+              <p><a href="#Top"><font size="5" face="Arial, Helvetica, sans-serif">Top Of Page </font></a></p>
+            </div></td>
+            <td width="38%"><div align="center">
+              <p><a href="https://www.elby-designs.com/webtek/documents/eurosynth/databus.htm"><img src="EuroSynth%20-%20MIDI%20Interfacing_files/pointer-right.jpg" width="143" height="143" border="0"></a></p>
+              <p><a href="https://www.elby-designs.com/webtek/documents/eurosynth/databus.htm"><font size="5" face="Arial, Helvetica, sans-serif">DATA Bus</font></a></p>
+            </div></td>
+          </tr>
+        </tbody></table>
+      </div>
+      <font size="3" face="Arial"><font size="4" face="Arial, Helvetica, sans-serif" color="#000000">Email:&nbsp; <a href="mailto:elby-designs@bigpond.com"> elby-designs@bigpond.com</a><br>
+        </font></font><font size="4" face="Arial, Helvetica, sans-serif">© Copyright 2000. All rights reserved. &nbsp;&nbsp;<i>&nbsp; </i>Rev</font><font size="4" face="Arial, Helvetica, sans-serif">ised:
+          <!--webbot bot="TimeStamp" startspan
+
+        s-type="EDITED" s-format="%B %d, %Y" -->
+          <!-- #BeginDate format:Am1 -->September 20, 2022<!-- #EndDate -->
+        </font></div>
+    </td>
+  </tr>
+</tbody></table>
+
+<p align="center">&nbsp;</p>
+
+
+
+
+
+</body></html>
