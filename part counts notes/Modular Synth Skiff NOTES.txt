@@ -1,0 +1,53 @@
+
+- Standards
+	- Power input:
+		- INPUT: 12VAC (AC: plug polarity irrelevant)
+		- 2.1mm pin power jack:
+			- Tayda SKU A-2237 "DC Power Jack 2.1mm Enclosed Frame With Switch"
+		- current brick: Jameco ReliaPro 120VAC 60Hz 29 W -> 12VAC 2000mA
+		- main power switch: 
+			- Tayda SKU A-4727 "Yellow LED Dot Light Rocker Switch ON/OFF SPST 12V"
+	- Module power connectors:
+		- Tayda SKU A-5505 "3 Pins JST XH-2.54 Male connector Straight 180°"
+		- Tayda SKU A-6682 "3 Pins JST XH-2.54 Female connector with Cable"
+			- Black: GND. Red: +12v. Yellow: -12v.
+		- Modules needing 5v, etc. must work it out for themselves.
+	- Exterior dimensions
+		- 12" wide 8.25" tall 55mm deep
+		- Current version is foam core board; imperfect but approximately correct size
+			to fit in vertical mounting space. Replace with a sturdier version any time.
+	- Interior dimensions
+		- about 4U x 56 HP x 45mm:
+		- depth 45mm (back wall to back of faceplates, which sit about 5mm behind box edge)
+			- depth of MIDI/MIXER is much less due to POWER behind them.
+		- width 290-292mm (about ~11.5", slightly narrower at power supply end)
+			- about 55-57 HP modular rack unit width, depending on tolerances
+		- height 7" = 177-178mm
+			- 4U modular rack unit height
+			- plus 7/8" POWER/MIDI/MIXER strip, which is not counted in the rack size
+				- which could be top or bottom! I've been thinking of it as the top,
+					but it might be more ergonomic at the bottom, with the power cord
+					and such hanging down below the box, when used vertically. If the
+					skiff is used on a flat surface, it's probably more ergonomic at
+					the top. It should be kept as reversible as possible.
+		- faceplace sizes
+			- Roughly based on existing 1U Tile standards:
+			- Height per U is about 44mm, closest to Pulp Logic 1U height of 43.18mm
+				- Intellijel 1U is 39.65mm high, which would leave gaps (for rail edges?)
+			- Width of a 6HP tile: about 30mm
+				- Pulp Logic uses 30.48mm; Intellijel 30mm
+			- Holes diameter 3.175mm; centered 5.08mm from sides, 2.9972mm from top/bottom 
+				- Following Pulp Logic's holes, farther from center than Intellijel
+			- PCB clearance (for rails and neighbors)
+				- Pulp Logic specifies a PCB maximum height of 28.702mm,
+					width margin each side of 1.27mm (e.g. width 27.46 out of 30).
+				- I might not be so precise about PCB size limits, but there isn't much room.
+	- Signals
+		- Audio
+			- Line level? +/- 2.5v?
+		- CV
+			- 1v/Oct, 1 volt per octave
+		- Gate
+			- ?
+	
+	
