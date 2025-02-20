@@ -41,7 +41,7 @@
 			- PCB clearance (for rails and neighbors)
 				- Pulp Logic specifies a PCB maximum height of 28.702mm,
 					width margin each side of 1.27mm (e.g. width 27.46 out of 30).
-				- I might not be so precise about PCB size limits, but there isn't much room.
+			- I might not be so precise about PCB size limits, but there isn't much room.
 	- Signals
 		- Audio
 			- Line level? +/- 2.5v?
@@ -49,5 +49,34 @@
 			- 1v/Oct, 1 volt per octave
 		- Gate
 			- ?
-	
-	
+	- Studio integration
+		- InsertMe port can connect to Insert 3 on UMC-404HD, taking input from the
+			microphone (low level, easily ignored) and sending output back to the
+			studio in place of the microphone input (rarely used in my productions)
+		- InsertMe port can connect instead to Insert 4 on UMC-404HD, to act as a
+			guitar effects chain. Insert 4 is guitar, and the Skiff can use it as
+			an input and return a processed version.
+			- I believe the internal wiring of the UMC-404HD puts the front knob
+				for each input between the input and the insert, so we can (for
+				example) simply turn down the guitar input to switch from guitar
+				effects mode to skiff-only mode. (For guitar-only, the skiff would
+				need to pass the InsertMe input to its output cleanly. My design
+				does not currently provide for that, so I expect to use the skiff
+				primarily on Insert 4, replacing the microphone I rarely use, rather
+				than as a guitar effects chain. I have VSTs for that, and the skiff
+				isn't being designed with that in mind. It's simply a cool potential
+				alternate mode that the InsertMe port allows for, to keep in mind.)
+		- Headphone out can be used as a general-purpose stereo out (though "stereo"
+			will likely be just the same signal in both ears).
+		- MIDI IN allows external sequencers (etc.) to generate CV and gate outputs
+			from "Module Zero", the top/bottom strip. In addition to the modular signals,
+			we'll also generate an audio signal: the MIDI IN portion of Module Zero
+			can be used as a mini-synth or MCO (MIDI-controlled oscillator). This is
+			sort of cheating, but will be a valuable shortcut before I have more
+			modules built. By starting with an MCO, I can immediately get in-tune
+			waveforms to test the skiff's audio chain(s) with. Indeed, it will 
+			immediately be a playable instrument, before any modules. At first there
+			will be just one of each type of output (audio, CV, Gate), but it's probably 
+			best to leave room on the front panel for several more. (Internally, they
+			can be easily added later via a plug-in I2C/Stemma QT multi-DAC board.)
+			
