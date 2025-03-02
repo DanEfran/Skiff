@@ -16,6 +16,7 @@
 // - Toggle switch; DIN-5 MIDI jack; 1/4" stereo TRS jack; 1/8" mono jacks 
 
 #include "display.h"
+#include "neopixel.h"
 
 void setup(void) {
   
@@ -24,6 +25,8 @@ void setup(void) {
   Serial.println(millis());
   
   Serial.print(F("Hello! Skiff MIDI In"));
+
+  initNeopixel();
 
   initDisplay();
 
@@ -52,5 +55,5 @@ void setup(void) {
 
 void loop() {
 
+  testNeopixel();
 }
-
