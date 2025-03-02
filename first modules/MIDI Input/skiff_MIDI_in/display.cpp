@@ -1,9 +1,11 @@
 // display.cpp
 // skiff_MIDI_in
 
+#include "display.h"
+
 #include <Adafruit_GFX.h>    // Core graphics library
 #include <Adafruit_ST7735.h> // Hardware-specific library for ST7735
-// #include <Adafruit_ST7789.h> // Hardware-specific library for ST7789
+
 #include <SPI.h>
 
 #define TFT_CS        A3 // 
@@ -11,8 +13,6 @@
 #define TFT_DC         A2 // 
 
 Adafruit_ST7735 tft = Adafruit_ST7735(TFT_CS, TFT_DC, TFT_RST);
-
-// float p = 3.1415926;
 
 void initDisplay(void) {
   
