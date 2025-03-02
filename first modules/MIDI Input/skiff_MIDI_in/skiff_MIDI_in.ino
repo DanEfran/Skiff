@@ -17,43 +17,39 @@
 
 #include "display.h"
 #include "neopixel.h"
+#include "SimpleSynth.h"
+
+time_t initSerial() {
+
+  Serial.begin(115200);
+  while (!Serial && (millis() < 10000));
+  return millis();
+
+}
 
 void setup(void) {
   
-  Serial.begin(115200);
-  while (!Serial && (millis() < 10000));
-  Serial.println(millis());
-  
-  Serial.print(F("Hello! Skiff MIDI In"));
+  time_t serial_startup_time = initSerial();
+
+  Serial.print(F("Hello! Serial connect time:"));
+  Serial.println(serial_startup_time);
+
 
   initNeopixel();
-
   initDisplay();
+  initSimpleSynth();
 
-  Serial.println(F("Initialized"));
+  Serial.println(F("Subsystems initialized"));
   
   testClearScreen();
-
-  delay(500);
-
-  // tft print function!
-  tftPrintTest();
-  delay(2000);
-
-  // line draw test
-  testlines();
-  delay(500);
-
-  // optimized lines
-  testfastlines();
-  delay(500);
-
   testroundrects();
-  delay(500);
+
+  Serial.println("Skiff MIDI In: ready.");
 
 }
 
 void loop() {
+  
+  loopSimpleSynth();
 
-  testNeopixel();
 }
