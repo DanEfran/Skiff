@@ -15,6 +15,16 @@
 // - Rotary encoder with push switch
 // - Toggle switch; DIN-5 MIDI jack; 1/4" stereo TRS jack; 1/8" mono jacks 
 
+/*
+    NOTES
+    - DAC board is not responding. I may have damaged it when soldering
+      and desoldering? It's got a huge heat sinking ground plane,
+      apparently, so the '-' output pad is almost unsolderable.
+      The Stemma QT port seems to work with other i2c boards, so I'll
+      have to try another DAC board. [2025-03-03]
+
+*/
+
 #include "display.h"
 #include "neopixel.h"
 #include "SimpleSynth.h"
