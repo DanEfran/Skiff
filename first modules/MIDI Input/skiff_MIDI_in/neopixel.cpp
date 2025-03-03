@@ -1,6 +1,8 @@
 // neopixel.cpp
 // skiff_MIDI_in
 
+#include "neopixel.h"
+
 #include <Adafruit_NeoPixel.h>
 
 Adafruit_NeoPixel pixels(1, PIN_NEOPIXEL, NEO_GRB + NEO_KHZ800);

@@ -18,6 +18,7 @@
 #include "display.h"
 #include "neopixel.h"
 #include "SimpleSynth.h"
+#include "rotary.h"
 
 time_t initSerial() {
 
@@ -38,6 +39,7 @@ void setup(void) {
   initNeopixel();
   initDisplay();
   initSimpleSynth();
+  initRotary();
 
   Serial.println(F("Subsystems initialized"));
   
@@ -51,5 +53,6 @@ void setup(void) {
 void loop() {
   
   loopSimpleSynth();
+  loopRotary();
 
 }
