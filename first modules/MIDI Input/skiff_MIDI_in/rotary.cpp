@@ -9,20 +9,26 @@ const int PIN_ROTARY_A = 24;
 const int PIN_ROTARY_B = 25;
 const int PIN_ROTARY_PUSH = 28;
 
+void handleRotaryA() {
+
+  bool clockwise = digitalRead(PIN_ROTARY_B);
+  Serial.printf("Rotary %s\r\n", clockwise ? "clockwise" : "counterclockwise" );
+
+}
+
+void handleRotaryPush() {
+
+  Serial.println("Rotary Push");
+
+}
+
 void initRotary() {
   
   pinMode(PIN_ROTARY_A, INPUT_PULLUP);
   pinMode(PIN_ROTARY_B, INPUT_PULLUP);
   pinMode(PIN_ROTARY_PUSH, INPUT_PULLUP);
 
-}
-
-void loopRotary() {
-
-  int aa = digitalRead(PIN_ROTARY_A);
-  int bb = digitalRead(PIN_ROTARY_B);
-  int cc = digitalRead(PIN_ROTARY_PUSH);
-
-  Serial.printf("%c  %c  %c\r\n", !aa ? 'A':'.', !bb ? 'B':'.', !cc ? 'C':'.');
+  attachInterrupt(digitalPinToInterrupt(PIN_ROTARY_A), handleRotaryA, FALLING);
+  attachInterrupt(digitalPinToInterrupt(PIN_ROTARY_PUSH), handleRotaryPush, FALLING);
 
 }

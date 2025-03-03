@@ -53,6 +53,5 @@ void setup(void) {
 void loop() {
   
   loopSimpleSynth();
-  loopRotary();
 
 }
