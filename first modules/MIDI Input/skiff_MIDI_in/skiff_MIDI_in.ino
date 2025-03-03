@@ -6,9 +6,9 @@
 // - Adafruit QT Py RP2040 
 //    - https://www.adafruit.com/product/4900
 //    - 3.3v
-// - Adafruit AD5693R Breakout Board 
-//    https://www.adafruit.com/product/5811
-//    - 16-Bit DAC with I2C Interface - STEMMA QT
+// - Adafruit MCP4728 Breakout Board 
+//    https://www.adafruit.com/product/4470
+//    - MCP4728 4-Channel 12-bit I2C DAC - STEMMA QT
 // - 0.96" 80x160 RGB IPS display
 //    - SPI interface
 //    - breakout board carved down by about 5mm to fit in a smaller space
@@ -22,6 +22,10 @@
       apparently, so the '-' output pad is almost unsolderable.
       The Stemma QT port seems to work with other i2c boards, so I'll
       have to try another DAC board. [2025-03-03]
+    - Switching to backup DAC, MCP4728: 4 channels but a lower bit depth;
+      for 1v/oct it shouldn't matter - I can always restrict each voice
+      to a range if the linearity is too rough for a full range. 
+      This board works, and this way I get a MIDI quartet. [2025-03-03]
     - Hardware is otherwise in good shape, but each output needs some
       kind of buffering: the audio is probably close to an acceptable
       level (?) but should probably be buffered; the Gate output 
@@ -36,6 +40,7 @@
 #include "neopixel.h"
 #include "SimpleSynth.h"
 #include "rotary.h"
+#include "DAC.h"
 
 time_t initSerial() {
 
@@ -57,6 +62,7 @@ void setup(void) {
   initDisplay();
   initSimpleSynth();
   initRotary();
+  initDAC();
 
   Serial.println(F("Subsystems initialized"));
   
@@ -70,5 +76,6 @@ void setup(void) {
 void loop() {
   
   loopSimpleSynth();
+  loopDACTest();
 
 }
